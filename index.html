@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&amp;family=Raleway:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>AdvancedCssProject</title>
+  </head>
+  <body>
+    <div class="container">
+      <video
+        id="loop-video"
+        src="Raindrops-on-Window-Loop.mp4"
+        autoplay
+        muted
+        loop
+      ></video>
+      <header class="header">
+        <input type="checkbox" id="burger-menu" class="burger-menu__checkbox" />
+        <label class="burger-menu" for="burger-menu">
+          <span class="burger-menu__line"></span
+          ><span class="burger-menu__line"></span
+          ><span class="burger-menu__line"></span>
+        </label>
+        <nav class="navigations">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="#bio">Bio</a></li>
+            <li><a class="nav__link" href="#skills">Skills</a></li>
+            <li><a class="nav__link" href="#media">Media</a></li>
+            <li><a class="nav__link" href="#projects">Projects</a></li>
+            <li><a class="nav__link" href="#reviews">My Clients</a></li>
+            <li><a class="nav__link" href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="toggle__wrapper">
+          <h3 class="toggle__title" for="toggle">Switch Theme</h3>
+          <input
+            class="toggle__checkbox"
+            type="checkbox"
+            name="toggle"
+            id="toggle"
+          />
+          <label for="toggle" class="toggle__label"></label>
+        </div>
+      </header>
+      <section id="bio" class="bio two__grid-columns">
+        <div class="bio__text">
+          <h1 class="bio__title">
+            Hi There, I’M A Passionate Software Engineer
+          </h1>
+          <p class="bio__describtion">
+            My name is
+            <span class="bio__describtion-name">John Doe</span>, a co-founder of
+            <a href="#" class="bio__describtion-site link">JDoe-site.com</a>,
+            Software Engineer and a content creator who publish content on
+            <a href="#" class="bio__describtion-facebook link">Facebook</a>,
+            <a href="#" class="bio__describtion-twitter link">Twitter</a>,
+            <a href="#" class="bio__describtion-linkdin link">LinkedIn</a>
+            and <a href="#" class="bio__describtion-youtube link">Youtube</a>.
+          </p>
+          <a class="bio__btn bio__contact" href="#">Say Hi</a>
+          <a class="bio__btn bio__cv" href="#"
+            >Download CV <span class="bio__cv-arrow">&darr;</span></a
+          >
+        </div>
+        <div class="bio__img-wrapper">
+          <img
+            src="images/personal-pic.png"
+            alt="personal picuture"
+            class="bio__img"
+          />
+        </div>
+      </section>
+      <section id="skills" class="section skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list three__grid-columns">
+          <li class="skills__list-item">
+            <h3 class="list-item__title">HTML</h3>
+            <span class="list-item__subtitle">8 years</span>
+          </li>
+          <li class="skills__list-item">
+            <h3 class="list-item__title">CSS</h3>
+            <span class="list-item__subtitle">8 years</span>
+          </li>
+          <li class="skills__list-item">
+            <h3 class="list-item__title">Javascript</h3>
+            <span class="list-item__subtitle">8 years</span>
+          </li>
+          <li class="skills__list-item">
+            <h3 class="list-item__title">React</h3>
+            <span class="list-item__subtitle">4 years</span>
+          </li>
+          <li class="skills__list-item">
+            <h3 class="list-item__title">Redux</h3>
+            <span class="list-item__subtitle">3 years</span>
+          </li>
+          <li class="skills__list-item">
+            <h3 class="list-item__title">React Testing Library</h3>
+            <span class="list-item__subtitle">1 year</span>
+          </li>
+        </ul>
+      </section>
+      <section id="media" class="media">
+        <video
+          class="media__video"
+          src="Rain-Sound-For-1-minute.mp4"
+          poster="https://placehold.co/1200x700?text=Video+Thumbnail"
+          controls
+          muted
+        ></video>
+      </section>
+      <section id="projects" class="projects">
+        <h2 class="section__title">MY FEATURED <br />PROJECTS</h2>
+        <div class="projects-wrapper two__grid-columns">
+          <img
+            src="https://placehold.co/500x500?text=Project+1"
+            alt="project 1 screenshot"
+            class="pro-img"
+          />
+          <div class="pro-info">
+            <h3 class="pro-info__title">Project 1 <br />Extension</h3>
+            <p class="pro-info__decription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
+              harum consequuntur excepturi consequatur doloribus, voluptate
+              blanditiis atque saepe.
+            </p>
+            <div class="pro-info__links">
+              <a href="#" class="pro-info__link" target="_blank">Chrome Link </a
+              ><a href="#" class="pro-info__link" target="_blank"
+                >Firfox Link </a
+              ><a href="#" class="pro-info__link" target="_blank">Edge Link </a>
+            </div>
+          </div>
+          <img
+            src="https://placehold.co/500x500?text=Project+2"
+            class="pro-img pro2-img"
+          />
+          <div class="pro-info">
+            <h3 class="pro-info__title">Project 2 <br />Extension</h3>
+            <p class="pro-info__decription">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+              repellat, nisi atque animi eum odio minus. Illo illum culpa
+              beatae, officia ex eaque placeat voluptas, ipsum exercitationem
+              velit autem vero! Aliquid ab eum eaque sunt.
+            </p>
+            <div class="pro-info__links">
+              <a href="#" class="pro-info__link" target="_blank">Chrome Link</a
+              ><a href="#" class="pro-info__link" target="_blank">Firfox Link</a
+              ><a href="#" class="pro-info__link" target="_blank">Edge Link</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="reviews" class="section reviews">
+        <h2 class="section__title">What My <br />Clients Says.</h2>
+        <div class="reviews-wrapper">
+          <p class="review">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+            Consequuntur deleniti quae iste amet cupiditate velit aliquid
+            explicabo reiciendis natus quisquam sequi tenetur cumque repudiandae
+            veritatis nostrum, asperiores quam dolores facere?
+          </p>
+          <p class="review">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea nisi
+            quos facere possimus cum esse nostrum, pariatur ipsa enim doloremque
+            dolores totam perspiciatis at inventore qui non aperiam voluptatibus
+            similique!
+          </p>
+          <p class="review">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            perspiciatis non delectus beatae odit.
+          </p>
+        </div>
+      </section>
+      <section id="contact" class="contact two__grid-columns">
+        <div class="contact__description">
+          <p class="contact__description-text">
+            Feel free to reach out to me any time. I prefer to talk over email,
+            especially since we may be a few time zones away.
+          </p>
+          <a href="mailto:example@gmail.com" class="contact__description-email"
+            >example@gmail.com</a
+          >
+          <div class="contact__description-socials">
+            <a href="#bio"
+              ><img
+                src="images/brand/facebook.svg"
+                alt="facebook icon"
+                class="social-icon" /></a
+            ><a href="#bio"
+              ><img
+                src="images/brand/twitter.svg"
+                alt="twitter icon"
+                class="social-icon" /></a
+            ><a href="#bio"
+              ><img
+                src="images/brand/youtube.svg"
+                alt="youtube icon"
+                class="social-icon" /></a
+            ><a href="#bio"
+              ><img
+                src="images/brand/github.svg"
+                alt="github icon"
+                class="social-icon" /></a
+            ><a href="#bio"
+              ><img
+                src="images/brand/instagram.svg"
+                alt=" instagram icon "
+                class="social-icon" /></a
+            ><a href="#bio"
+              ><img
+                src="images/brand/LinkedIn.svg"
+                alt="linkdin icon"
+                class="social-icon"
+            /></a>
+          </div>
+        </div>
+        <div>
+          <h2 class="section__title">Lets Work <br />Together</h2>
+          <form class="contact__form" action="#" method="post">
+            <input
+              type="text"
+              class="form-full-name"
+              placeholder="Full Name"
+              required
+            /><input
+              type="tel"
+              name="form-phone"
+              class="form-phone"
+              placeholder="Phone No."
+              required
+            /><textarea
+              name="form-message"
+              class="form-message"
+              placeholder="Your Message"
+              rows="1"
+              required
+            ></textarea
+            ><input class="form-btn" type="submit" value="Send Message" c />
+          </form>
+        </div>
+      </section>
+      <footer class="footer">
+        <p class="footer__text">&copy; 2022 by Mohamed Abusrea</p>
+      </footer>
+    </div>
+  </body>
+</html>
